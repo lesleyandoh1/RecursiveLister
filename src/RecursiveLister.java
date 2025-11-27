@@ -50,7 +50,7 @@ public class RecursiveLister extends JFrame {
 
         if (result == JFileChooser.APPROVE_OPTION) {
             File selectedDirectory = fileChooser.getSelectedFile();
-            displayArea.setText(""); // Clear previous results
+            displayArea.setText(""); 
             displayArea.append("--- Starting Traversal of: " + selectedDirectory.getAbsolutePath() + " ---\n\n");
 
             listFilesRecursively(selectedDirectory, 0);
